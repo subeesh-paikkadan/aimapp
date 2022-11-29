@@ -1,0 +1,119 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AIM | PSC</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="{% static '/images/AIMLOGO.jpg'%}>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="aim psc nilambur">
+<meta name="description" content="kerala psc, upsc, rrb, groupd,police,fireforce,ldc,ld clerk,etc kerala psc materials and an institute with good value and fantastic staff. ">
+<meta name="keywords" content="kerala psc,psc,kpsc,thulasi,aim,aim nilambur,wandoor,psc center,best,lakshya,kerala psc,upsc,police">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static '/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/newStyle.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/blog.css' %}" rel="stylesheet" type="text/css" media="all" />
+
+
+
+<!-- js -->
+<script type="text/javascript" src="{% static '/js/jquery-2.1.4.min.js'%}"></script>
+<!-- //js -->
+<!-- font-awesome icons -->
+<link href="{% static '/css/font-awesome.css' %}" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<link href="//fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+</head>
+	
+<body>
+<!-- header -->
+	<!-- banner -->	
+	<div class="header-w3layoutstop " style=" padding: 0.8em 0;  background: #0099ff;">
+			<div class="container">  
+				<div class="hdr-w3left navbar-left">
+					<p><span class="fa fa-phone"></span> +919207343144 </p> 
+				</div>
+				<div class="search-grid" style="text-align: right;">
+					<form action="#" method="post">
+						<input type="text" placeholder="Search" class="big-dog" name="Subscribe" required="">
+						<button class="btn1"><i class="fa fa-search" aria-hidden="true"></i></button>
+					</form>
+				</div>	
+			</div>
+		</div>
+<!-- navigation -->
+
+
+<div class="nav-links">	
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				
+				<a class="navbar-brand" href="{% url 'index' %}" style="color: #ff5500; background-color: #FFFFFF;"><h1>AIM | PSC</h1></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav link-effect">
+					<li class="active"><a href="{% url 'index' %}">Home</a></li>
+					<li><a href="{% url 'gallery' %}" >gallery</a></li>
+                    <li><a href="{% url 'blog' %}" >Current Affairs</a></li>
+                    <li><a href="https://wa.me/919207343144">Whatsapp</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+<!-- /navigation -->
+
+
+
+<!--  gallery -->
+<div class="portfolio-agileinfo" id="photoSpace">
+    <div class="container">
+        <div class="wthree_head_section_gallery">
+            <h3 class="w3l_header w3_agileits_header">Current Affairs</h3>
+        </div>
+    </div>
+<!--// Gallery -->
+{% for p in post %}
+
+		<div class="box" style="max-width: 18rem;">
+			<div class="card-header">{{p.Heading}}</div>
+			<hr>
+			<div class="card-body">
+			  <p class="card-text">{{p.content }}</p>
+			</div>
+		</div>
+
+
+{% endfor %}
+
+
+<div class="copyright" style="background-color: black; color:aliceblue; text-align:center; clear: left;">
+	<div class="container">
+		<p>© 2018-2021 AIM PSC CENTER | NILAMBUR. All rights reserved |</p>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="{% static 'js/move-top.js'%}"></script>
+<script type="text/javascript" src="{% static '/js/easing.js'%}"></script>
+
+<script src="{% static '/js/bootstrap.js'%}"></script>
+
+</body>
+</html>
